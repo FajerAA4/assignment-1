@@ -1,0 +1,152 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height:1.6;
+    transition: background 0.3s,color 0.3s;
+}
+header{
+    background: linear-gradient(90deg, #e91e63, #6a1b9a);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+nav a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+section{
+    padding: 2rem;
+    max-width:900px;
+    margin: auto;
+}
+h2{
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+/* About section */
+#about img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+/* Projects section */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.project-card{
+    flex: 1 1 250px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    background: #f9f9f9;
+}
+.project-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* contact section */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+input,textarea, button{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    background: linear-gradient(90deg, #e91e63, #6a1b9a);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+button:hover{
+    opacity: 0.85
+}
+
+/* dark mode*/
+.dark-mode{
+    background: #121212;
+    color: #eee;
+}
+.dark-mode h2{
+    border-bottom: #eee;
+}
+.dark-mode .project-card{
+    background: #1e1e1e;
+    border: 1px solid #444;
+}
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    nav a {
+        font-size: 1.1rem;
+    }
+    section {
+        padding: 3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        flex: 1 1 45%;
+    }
+}
+
+/* Small devices (phones, 767px and below) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .project-card {
+        flex: 1 1 100%;
+    }
+    form {
+        width: 100%;
+    }
+}
