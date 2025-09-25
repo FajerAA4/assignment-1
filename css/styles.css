@@ -1,3 +1,4 @@
+/* base body styling*/
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,41 +6,46 @@ body{
     line-height:1.6;
     transition: background 0.3s,color 0.3s;
 }
+/* header styling (Gradient background, white text) */
 header{
     background: linear-gradient(90deg, #e91e63, #6a1b9a);
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
+/* navigation link*/
 nav a{
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
+/* general section layout*/
 section{
     padding: 2rem;
     max-width:900px;
     margin: auto;
 }
+/* section titles */
 h2{
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
 }
-/* About section */
+/* About section profile section */
 #about img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-top: 10px;
 }
-/* Projects section */
+/* Projects layout */
 .projects{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
 }
+/* project card styling*/
 .project-card{
     flex: 1 1 250px;
     border: 1px solid #ccc;
@@ -55,18 +61,20 @@ h2{
     border-radius: 5px;
 }
 
-/* contact section */
+/* contact from section */
 form{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
+/* inputs, textarea, and button style*/
 input,textarea, button{
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+/* button gradient style*/
 button{
     background: linear-gradient(90deg, #e91e63, #6a1b9a);
     color: white;
@@ -81,7 +89,7 @@ button:hover{
     opacity: 0.85
 }
 
-/* dark mode*/
+/* dark mode overrides */
 .dark-mode{
     background: #121212;
     color: #eee;
@@ -93,6 +101,7 @@ button:hover{
     background: #1e1e1e;
     border: 1px solid #444;
 }
+/* responsive design*/
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
     header h1 {

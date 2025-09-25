@@ -3,7 +3,7 @@ function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 }
 
-// Greeting message based on time of day
+//function for the Greeting message based on time of day
 window.onload = function () {
     const greetText = document.getElementById("greet-text");
     const hour = new Date().getHours();
